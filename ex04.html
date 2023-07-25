@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: blue;
+            color: white;
+            font: normal 18pt Arial;
+        }
+    </style>
+</head>
+<body>
+    <h1>Iniciando estudos com DOM</h1>
+    <p>Aqui vai o resultado</p>
+    <p>Aprendendoa usar o <b>DOM</b> em javascript.</p>
+    <div>Clique em mim</div>
+    <!--<div id="msg">Clique em mim</div>-->
+    <script>
+        var corpo = .document.body
+       /* var p1 = window.document.getElementsByTagName('p')[1]//Seleciona o primeiro paragrafo com selecionador por marca (o numero indica o paragrafo)
+        var d = .document.getelementsbyid('msg')// seleciona por Id
+        var d = .document.getElementsByTagName('msg')[0]// seleciona por Name*/
+        d.style.blackground = 'green' //fundo da letra vai ficar verde
+        d.innerText = 'Estou aguardando...'//mudou o clique em mim para estou aguardando..
+        window.document.write('Esta escrito assim:'+ p1.innerText)
+        p1.style.color = 'orange'//muda a cro da letra com DOM
+        corpo.style.blackground = 'black'//muda a cor do fundo com DOM 
+        window.document.write('Olá, mundo') //exemplo
+        window.document.write(window.navigator) //exemplo
+        var d = window.document.querySelector("div#msg") // selecionar por css, quando é ID coloca #
+        var d = window.document.querySelector("div.msg") // selecionar por css, quando é Class coloca .
+
+
+
+    </script>
+</body>
+</html>
